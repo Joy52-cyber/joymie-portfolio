@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joymie Lacaba - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 10.5pt;
+            line-height: 1.4;
+            color: #2d2d2d;
+            background: #fff;
+            padding: 40px 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media print {
+            body {
+                padding: 25px 35px;
+                font-size: 10pt;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 22pt;
+            color: #1a1a1a;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .contact-line {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 9.5pt;
+            color: #444;
+            margin-bottom: 3px;
+        }
+
+        .contact-line a {
+            color: #1a5276;
+            text-decoration: none;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #1a1a1a;
+            margin: 16px 0;
+        }
+
+        section {
+            margin-bottom: 14px;
+        }
+
+        h2 {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 10.5pt;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 3px;
+        }
+
+        .entry {
+            margin-bottom: 12px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            color: #1a1a1a;
+            font-size: 10.5pt;
+        }
+
+        .entry-date {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            color: #555;
+            font-size: 9.5pt;
+            font-style: italic;
+        }
+
+        .entry-company {
+            font-style: italic;
+            color: #333;
+            margin-bottom: 4px;
+            font-size: 10pt;
+        }
+
+        .entry-note {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            color: #666;
+            font-size: 9pt;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 18px;
+            margin-top: 3px;
+        }
+
+        li {
+            margin-bottom: 3px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .skills-section {
+            font-family: 'Calibri', 'Arial', sans-serif;
+        }
+
+        .skill-row {
+            margin-bottom: 5px;
+            display: flex;
+        }
+
+        .skill-label {
+            font-weight: bold;
+            color: #1a1a1a;
+            min-width: 150px;
+            font-size: 10pt;
+        }
+
+        .skill-value {
+            color: #333;
+            font-size: 10pt;
+            flex: 1;
+        }
+
+        .project {
+            margin-bottom: 10px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        .project-tech {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 9.5pt;
+            color: #555;
+            font-style: italic;
+        }
+
+        .project-desc {
+            color: #333;
+            margin-top: 3px;
+            text-align: justify;
+            font-size: 10pt;
+        }
+
+        .summary-text {
+            text-align: justify;
+            color: #333;
+        }
+
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #1a5276;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 13px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .print-btn:hover {
+            background: #154360;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">PRINT / SAVE PDF</button>
+
+    <header>
+        <h1>Joymie Lacaba</h1>
+        <div class="contact-line">
+            Angeles, Pampanga, Philippines &nbsp;|&nbsp; GMT+8 &nbsp;|&nbsp; Open to Remote
+        </div>
+        <div class="contact-line">
+            <a href="mailto:joylacaba52@gmail.com">joylacaba52@gmail.com</a> &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/in/joymie-l-4a765024b">LinkedIn</a> &nbsp;|&nbsp;
+            <a href="https://github.com/Joy52-cyber">GitHub</a> &nbsp;|&nbsp;
+            <a href="https://www.slashcal.com">slashcal.com</a>
+        </div>
+    </header>
+
+    <hr class="divider">
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary-text">
+            Project Coordinator driving cross-functional delivery for live mobile titles, having transitioned from QA Associate to Project Coordinator within 6 months based on demonstrated ownership. Experience running daily cadence, stakeholder alignment, and release readiness for a 5-person engineering team across a released title and an unreleased project. Complementary product-builder background from shipping an independent SaaS (SlashCal) and self-teaching AI pair-programming to build a suite of autonomous growth agents. Bias toward defining success metrics, running disciplined experiments, and killing losers fast.
+        </p>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Project Coordinator &amp; Quality Assurance</span>
+                <span class="entry-date">Aug 2024 &ndash; Present</span>
+            </div>
+            <div class="entry-company">Eyeball Games Private Limited &middot; Singapore (Remote)</div>
+            <div class="entry-note">Promoted from QA Associate + Community Support (Aug 2024 &ndash; Jan 2025) &rarr; Project Coordinator &amp; QA (Feb 2025 &ndash; Present)</div>
+            <ul>
+                <li>Transitioned from QA Associate to <strong>Project Coordinator &amp; QA within 6 months</strong> based on demonstrated ownership; scope expanded in Oct 2024 to include Notion and standup management before the formal role change.</li>
+                <li><strong>Define project scope, create schedules, and track milestones</strong>; maintain project documentation including meeting minutes, action items, and risk registers.</li>
+                <li><strong>Act as central point of contact for project communication</strong>; facilitate team meetings across engineering, design, and stakeholders.</li>
+                <li><strong>Sole QA on Pool Masters</strong> (live on Google Play Store). Own the full bug lifecycle in Notion from discovery through fix verification.</li>
+                <li><strong>Lead daily tracking calls with a 5-person team</strong> (4 engineers + self as QA lead), keeping developers, designers, and stakeholders aligned on status and next actions.</li>
+                <li><strong>Leading QA on a new in-game control scheme</strong> for an unreleased title; defined intended feel, function, and edge-case behavior, with design approved by stakeholders.</li>
+                <li><strong>Organize and facilitate playtest sessions</strong> with players, designers, and developers; synthesize feedback into structured iteration notes that shape subsequent builds.</li>
+                <li><strong>Engage with players on reported in-game bug issues</strong> alongside a teammate; triage reports, verify reproduction, and coordinate fixes with engineering.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">AI Agent Developer: Growth Engine for SlashCal</span>
+                <span class="entry-date">2025 &ndash; Present</span>
+            </div>
+            <div class="entry-company">Self-Directed Side Project</div>
+            <ul>
+                <li><strong>Designed and shipped a suite of autonomous agents</strong> for advertising, prospect scraping, and data enrichment. These serve as the growth engine driving user acquisition for SlashCal.</li>
+                <li>Defined multi-channel outreach sequences, reply classification, and structured metric tracking (reply rate, positive rate, booking rate) against benchmarks.</li>
+                <li>Applied <strong>stop-rules and retrospectives</strong> (pause experiments at &lt;2% reply after 100 sends) to kill underperforming campaigns and iterate toward working ones.</li>
+                <li>Self-taught <strong>AI pair-programming ("vibe coding")</strong> with Claude and Cursor to ship working software without a traditional team.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Independent Product Builder</span>
+                <span class="entry-date">Dec 2022 &ndash; Aug 2024</span>
+            </div>
+            <div class="entry-company">SlashCal (www.slashcal.com)</div>
+            <ul>
+                <li><strong>Scoped, built, and shipped SlashCal</strong>, a full-stack AI scheduling SaaS, as sole product owner. Handled roadmap, sprint planning, self-QA, and release.</li>
+                <li>Integrated Google and Microsoft calendar sync, Stripe billing, and Claude AI-powered natural-language scheduling.</li>
+                <li>Defined feature priorities, managed releases end-to-end, and iterated based on real user feedback.</li>
+                <li>Applied structured experiment process with success metrics, benchmarks, and retrospectives to guide product decisions.</li>
+                <li>Stack: React, Node.js / Express, PostgreSQL, Claude API, Stripe, Google / Microsoft Calendar APIs.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">QA Intern</span>
+                <span class="entry-date">Sept &ndash; Nov 2022</span>
+            </div>
+            <div class="entry-company">Twist Resources &middot; 3-month internship</div>
+            <ul>
+                <li>Assigned as QA on a specific project; reported directly to the lead QA on daily testing activities.</li>
+                <li>Performed manual testing and logged bugs with reproduction steps and severity.</li>
+                <li>Edited and updated existing test cases based on product changes and testing findings.</li>
+                <li>Collaborated closely with the lead QA to understand QA workflows, bug triage, and release cycles.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Notable Projects</h2>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">NativeEyeQA</span>
+                <span class="project-tech">C#, WPF, Appium, AI Integration</span>
+            </div>
+            <p class="project-desc">
+                Built an AI-powered test automation tool that lets QA engineers write and run mobile tests using plain English. Created the desktop dashboard in C#/WPF and integrated Appium to execute automated tests on both Android and iOS devices. Reduced manual test scripting time by enabling natural language test case generation.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="skills-section">
+            <div class="skill-row">
+                <span class="skill-label">Project Delivery:</span>
+                <span class="skill-value">Cross-functional coordination &middot; Daily standups &middot; Sprint &amp; task prioritization &middot; Stakeholder alignment &middot; Release readiness &middot; Risk registers &middot; Meeting facilitation &middot; Milestone tracking</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-label">Product &amp; Experimentation:</span>
+                <span class="skill-value">Product scoping &middot; Roadmap prioritization &middot; Success-metric definition &middot; A/B experiments &middot; Benchmarks &amp; stop-rules &middot; Retrospectives &middot; User feedback synthesis</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-label">Quality Assurance:</span>
+                <span class="skill-value">Exploratory testing &middot; Manual testing (web &amp; mobile) &middot; Playtest facilitation &middot; Player-facing bug triage &middot; Fix verification &middot; Release sign-off</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-label">Tools:</span>
+                <span class="skill-value">Notion &middot; JIRA &middot; Slack &middot; GitHub &middot; Trello &middot; Railway &middot; Claude &middot; Cursor</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-label">Technical:</span>
+                <span class="skill-value">JavaScript &middot; SQL &middot; C# / WPF &middot; React &middot; Node.js / Express &middot; PostgreSQL &middot; Appium &middot; Agile / Scrum &middot; AI-assisted development ("vibe coding")</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-label">API Integrations:</span>
+                <span class="skill-value">Claude API &middot; OpenAI API &middot; Google Gemini API &middot; Stripe &middot; Google Calendar &middot; Microsoft Calendar &middot; Gmail (SMTP + IMAP) &middot; Slack &middot; OAuth &middot; WebSocket</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-label">Languages:</span>
+                <span class="skill-value">English (professional) &middot; Filipino (native)</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Bachelor of Science in Information Technology</span>
+                <span class="entry-date">Graduated June 2021</span>
+            </div>
+            <div class="entry-company">STI College</div>
+        </div>
+    </section>
+
+</body>
+</html>
