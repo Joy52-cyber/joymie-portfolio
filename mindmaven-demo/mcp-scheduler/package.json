@@ -1,0 +1,16 @@
+{
+  "name": "mcp-scheduler",
+  "version": "1.0.0",
+  "description": "A tiny MCP server exposing scheduling-assistant tools (open-slot finding + follow-up drafting) to Claude Code. No API keys required.",
+  "type": "module",
+  "bin": {
+    "mcp-scheduler": "server.js"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  }
+}
