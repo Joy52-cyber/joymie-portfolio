@@ -154,7 +154,7 @@
     <section>
         <h2>What This Is</h2>
         <p class="summary-text">
-            A short account of how I test a mobile build I did not write and cannot see the source of &mdash; what I found, what I got wrong, and the check that caught it. Everything below was measured on a retail Android tablet against apps installed from Google Play. No SDK was added, no instrumentation, no cooperation from the developer.
+            A short account of how I test a mobile build I did not write and cannot see the source of - what I found, what I got wrong, and the check that caught it. Everything below was measured on a retail Android tablet against apps installed from Google Play. No SDK was added, no instrumentation, no cooperation from the developer.
         </p>
         <p class="summary-text">
             I have led with the mistake rather than the finding, because the mistake is the part that decides whether the finding can be trusted.
@@ -165,18 +165,18 @@
         <h2>The Candidate I Refuted</h2>
         <div class="entry">
             <div class="entry-header">
-                <span class="entry-title">A resource error that reproduced three times out of three &mdash; and was still not a defect</span>
+                <span class="entry-title">A resource error that reproduced three times out of three - and was still not a defect</span>
             </div>
             <div class="entry-note">Coin Master Board Adventure &middot; three cold launches</div>
             <ul>
                 <li>Every run logged <code>No package ID 6a found for resource ID 0x6a0b0013</code> from the app's own process.</li>
-                <li><code>0x7f</code> is an app's own resources and <code>0x01</code> is the framework. <code>0x6a</code> is neither, and this build ships dynamic feature modules &mdash; so &ldquo;a split that isn't loaded when the resource is asked for&rdquo; fit the evidence.</li>
+                <li><code>0x7f</code> is an app's own resources and <code>0x01</code> is the framework. <code>0x6a</code> is neither, and this build ships dynamic feature modules - so &ldquo;a split that isn't loaded when the resource is asked for&rdquo; fit the evidence.</li>
                 <li>It reproduced in <strong>all three runs</strong>, which is normally what promotes a lead to a finding.</li>
                 <li>Before writing it up I widened the search past the app's package. <strong>Google Play Movies emitted the identical line with the identical resource ID.</strong></li>
                 <li>Two unrelated applications cannot own the same app-local resource. <code>0x6a</code> belongs to a shared library on that device, and the miss is a device-side condition rather than anyone's bug.</li>
             </ul>
             <p class="summary-text">
-                Reproducing was not enough. The check that settled it &mdash; <em>does any other process on this device say the same thing?</em> &mdash; costs one command, and without it I would have sent a developer chasing something that was never theirs.
+                Reproducing was not enough. The check that settled it - <em>does any other process on this device say the same thing?</em> - costs one command, and without it I would have sent a developer chasing something that was never theirs.
             </p>
         </div>
     </section>
@@ -190,9 +190,9 @@
             <div class="entry-note">Block Blast &middot; corroborated on two independent channels</div>
             <ul>
                 <li><strong>Channel one, the app's own log:</strong> <code>ClassNotFoundException</code> for its Firebase reporting adapter, twelve times on every launch.</li>
-                <li><strong>Channel two, the shipped artifact:</strong> I pulled the installed APK and searched all <strong>16 dex files</strong>. The class is in none of them, while its package is present and populated and its sibling adapters &mdash; ThinkingData, AppsFlyer &mdash; both shipped.</li>
+                <li><strong>Channel two, the shipped artifact:</strong> I pulled the installed APK and searched all <strong>16 dex files</strong>. The class is in none of them, while its package is present and populated and its sibling adapters - ThinkingData, AppsFlyer - both shipped.</li>
                 <li>Either channel alone proves nothing. An exception could be handled; a missing class could be intentional. <strong>Together they say the code asks for it and the build does not contain it, on every launch.</strong></li>
-                <li>The shape &mdash; one class stripped, its neighbours kept, loaded through a factory &mdash; is what a shrinker does to a reflectively-loaded class. I wrote that up as a hypothesis with the two other explanations that fit the same evidence, not as a cause.</li>
+                <li>The shape - one class stripped, its neighbours kept, loaded through a factory - is what a shrinker does to a reflectively-loaded class. I wrote that up as a hypothesis with the two other explanations that fit the same evidence, not as a cause.</li>
                 <li>The fix ships with a verification step against <em>the built artifact rather than the source</em>, because a keep rule that is present and not working looks identical to one that is absent.</li>
             </ul>
         </div>
@@ -207,7 +207,7 @@
             <ul>
                 <li>Looking for performance problems, I searched the log for main-thread stalls and found ten, the worst at 3.8 seconds.</li>
                 <li><strong>Only six belonged to the app.</strong> The others came from Android's own <code>system_server</code> and from a Lenovo pen service that happens to run on that tablet.</li>
-                <li>My search matched on the text. The tooling I had already written binds every finding to the application's <em>process ID</em>, and it had been right the whole time &mdash; I just had not used it for that pass.</li>
+                <li>My search matched on the text. The tooling I had already written binds every finding to the application's <em>process ID</em>, and it had been right the whole time - I just had not used it for that pass.</li>
                 <li>The corrected finding is still real: six stalls in 116 seconds, worst 3,789ms, five of them carrying the same message identity, which narrows it to one repeated operation rather than five unrelated ones.</li>
             </ul>
             <p class="summary-text">
@@ -231,7 +231,7 @@
     <section>
         <h2>Tooling</h2>
         <p class="summary-text">
-            The runs behind this were driven by <strong>Verdict</strong>, a test harness I built: it launches a build on real hardware, guarantees a process start the log can be bound to, streams the device log for the whole session, and files each run as a structured record with the app's own output attached. Two of the three items above came out of channels that need nothing from the developer &mdash; which is the point, since a stranger's binary is the normal case.
+            The runs behind this were driven by <strong>Verdict</strong>, a test harness I built: it launches a build on real hardware, guarantees a process start the log can be bound to, streams the device log for the whole session, and files each run as a structured record with the app's own output attached. Two of the three items above came out of channels that need nothing from the developer - which is the point, since a stranger's binary is the normal case.
         </p>
     </section>
 
