@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joymie Lacaba - QA Case Study</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 10.5pt;
+            line-height: 1.4;
+            color: #2d2d2d;
+            background: #fff;
+            padding: 40px 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media print {
+            body { padding: 22px 32px; font-size: 9.8pt; }
+            .no-print { display: none !important; }
+        }
+
+        header { text-align: center; margin-bottom: 16px; }
+
+        h1 {
+            font-size: 22pt;
+            color: #1a1a1a;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .role-line {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 10.5pt;
+            color: #1a5276;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .contact-line {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 9.5pt;
+            color: #444;
+            margin-bottom: 3px;
+        }
+
+        .contact-line a { color: #1a5276; text-decoration: none; }
+
+        .divider { border: none; border-top: 1px solid #1a1a1a; margin: 14px 0; }
+
+        section { margin-bottom: 13px; }
+
+        h2 {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 10.5pt;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 3px;
+        }
+
+        .entry { margin-bottom: 11px; }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .entry-title { font-weight: bold; color: #1a1a1a; font-size: 10.5pt; }
+
+        .entry-date {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            color: #555;
+            font-size: 9.5pt;
+            font-style: italic;
+        }
+
+        .entry-company { font-style: italic; color: #333; margin-bottom: 4px; font-size: 10pt; }
+
+        .entry-note {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            color: #666;
+            font-size: 9pt;
+            margin-bottom: 5px;
+        }
+
+        ul { margin-left: 18px; margin-top: 3px; }
+        li { margin-bottom: 3px; color: #333; text-align: justify; }
+
+        .skills-section { font-family: 'Calibri', 'Arial', sans-serif; }
+        .skill-row { margin-bottom: 5px; display: flex; }
+        .skill-label { font-weight: bold; color: #1a1a1a; min-width: 175px; font-size: 9.8pt; }
+        .skill-value { color: #333; font-size: 9.8pt; flex: 1; }
+
+        .project { margin-bottom: 10px; }
+        .project-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .project-title { font-weight: bold; color: #1a1a1a; }
+        .project-tech {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 9.5pt;
+            color: #555;
+            font-style: italic;
+        }
+        .project-desc { color: #333; margin-top: 3px; text-align: justify; font-size: 10pt; }
+
+        .summary-text { text-align: justify; color: #333; }
+        .career-break { color: #444; text-align: justify; font-size: 10pt; margin-top: 3px; }
+
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #1a5276;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 13px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        .print-btn:hover { background: #154360; }
+    </style>
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">PRINT / SAVE PDF</button>
+
+    <header>
+        <h1>Joymie Lacaba</h1>
+        <div class="role-line">QA Case Study&nbsp;&nbsp;&middot;&nbsp;&nbsp;Testing a shipped app with no source and no access</div>
+        <div class="contact-line">
+            Angeles, Pampanga, Philippines &nbsp;|&nbsp; GMT+8 &nbsp;|&nbsp; Open to Remote
+        </div>
+        <div class="contact-line">
+            <a href="mailto:joylacaba52@gmail.com">joylacaba52@gmail.com</a> &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/in/joymie-l-4a765024b">LinkedIn</a> &nbsp;|&nbsp;
+            <a href="https://github.com/Joy52-cyber">GitHub</a> &nbsp;|&nbsp;
+            <a href="https://www.slashcal.com">slashcal.com</a>
+        </div>
+    </header>
+
+    <hr class="divider">
+
+    <section>
+        <h2>What This Is</h2>
+        <p class="summary-text">
+            A short account of how I test a mobile build I did not write and cannot see the source of &mdash; what I found, what I got wrong, and the check that caught it. Everything below was measured on a retail Android tablet against apps installed from Google Play. No SDK was added, no instrumentation, no cooperation from the developer.
+        </p>
+        <p class="summary-text">
+            I have led with the mistake rather than the finding, because the mistake is the part that decides whether the finding can be trusted.
+        </p>
+    </section>
+
+    <section>
+        <h2>The Candidate I Refuted</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">A resource error that reproduced three times out of three &mdash; and was still not a defect</span>
+            </div>
+            <div class="entry-note">Coin Master Board Adventure &middot; three cold launches</div>
+            <ul>
+                <li>Every run logged <code>No package ID 6a found for resource ID 0x6a0b0013</code> from the app's own process.</li>
+                <li><code>0x7f</code> is an app's own resources and <code>0x01</code> is the framework. <code>0x6a</code> is neither, and this build ships dynamic feature modules &mdash; so &ldquo;a split that isn't loaded when the resource is asked for&rdquo; fit the evidence.</li>
+                <li>It reproduced in <strong>all three runs</strong>, which is normally what promotes a lead to a finding.</li>
+                <li>Before writing it up I widened the search past the app's package. <strong>Google Play Movies emitted the identical line with the identical resource ID.</strong></li>
+                <li>Two unrelated applications cannot own the same app-local resource. <code>0x6a</code> belongs to a shared library on that device, and the miss is a device-side condition rather than anyone's bug.</li>
+            </ul>
+            <p class="summary-text">
+                Reproducing was not enough. The check that settled it &mdash; <em>does any other process on this device say the same thing?</em> &mdash; costs one command, and without it I would have sent a developer chasing something that was never theirs.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>The Finding That Held</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">A class the app loads at runtime that is not in the shipped build</span>
+            </div>
+            <div class="entry-note">Block Blast &middot; corroborated on two independent channels</div>
+            <ul>
+                <li><strong>Channel one, the app's own log:</strong> <code>ClassNotFoundException</code> for its Firebase reporting adapter, twelve times on every launch.</li>
+                <li><strong>Channel two, the shipped artifact:</strong> I pulled the installed APK and searched all <strong>16 dex files</strong>. The class is in none of them, while its package is present and populated and its sibling adapters &mdash; ThinkingData, AppsFlyer &mdash; both shipped.</li>
+                <li>Either channel alone proves nothing. An exception could be handled; a missing class could be intentional. <strong>Together they say the code asks for it and the build does not contain it, on every launch.</strong></li>
+                <li>The shape &mdash; one class stripped, its neighbours kept, loaded through a factory &mdash; is what a shrinker does to a reflectively-loaded class. I wrote that up as a hypothesis with the two other explanations that fit the same evidence, not as a cause.</li>
+                <li>The fix ships with a verification step against <em>the built artifact rather than the source</em>, because a keep rule that is present and not working looks identical to one that is absent.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>The Error I Made, And What Caught It</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">I attributed another process's stalls to the app</span>
+            </div>
+            <ul>
+                <li>Looking for performance problems, I searched the log for main-thread stalls and found ten, the worst at 3.8 seconds.</li>
+                <li><strong>Only six belonged to the app.</strong> The others came from Android's own <code>system_server</code> and from a Lenovo pen service that happens to run on that tablet.</li>
+                <li>My search matched on the text. The tooling I had already written binds every finding to the application's <em>process ID</em>, and it had been right the whole time &mdash; I just had not used it for that pass.</li>
+                <li>The corrected finding is still real: six stalls in 116 seconds, worst 3,789ms, five of them carrying the same message identity, which narrows it to one repeated operation rather than five unrelated ones.</li>
+            </ul>
+            <p class="summary-text">
+                The reproduction steps in the report now end with the pid filter and a note that the same device emits identical-looking lines from processes that are not the app. That instruction exists because I needed it.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>How I Write It Up</h2>
+        <div class="entry">
+            <ul>
+                <li><strong>Confidence stated per item.</strong> &ldquo;Measured&rdquo;, &ldquo;lead&rdquo; and &ldquo;refuted&rdquo; are different words and get used as such.</li>
+                <li><strong>Reproduction steps that work on someone else's machine</strong>, including the traps.</li>
+                <li><strong>What the report does not claim</strong>, written down: not a cause, not a regression, not a pass. Absence of other findings is absence of looking.</li>
+                <li><strong>Refuted candidates stay in the document.</strong> A report that lists only what survived says nothing about how hard anything was looked at.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Tooling</h2>
+        <p class="summary-text">
+            The runs behind this were driven by a test harness I built: it launches a build on real hardware, guarantees a process start the log can be bound to, streams the device log for the whole session, and files each run as a structured record with the app's own output attached. Two of the three items above came out of channels that need nothing from the developer &mdash; which is the point, since a stranger's binary is the normal case.
+        </p>
+    </section>
+
+</body>
+</html>
