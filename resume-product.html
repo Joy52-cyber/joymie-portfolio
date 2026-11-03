@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Joymie Lacaba - Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: A4; margin: 0; }
+  body { font-family: Georgia, serif; font-size: 9.3pt; line-height: 1.3; color: #222; padding: 0.38in 0.55in 0.3in; }
+  a { color: inherit; text-decoration: none; }
+  header { text-align: center; }
+  h1 { font-size: 24pt; font-weight: normal; color: #111; line-height: 1.2; margin-bottom: 3pt; }
+  .role-line { font-family: Calibri, sans-serif; font-size: 11pt; color: #1f4e79; margin-bottom: 2pt; }
+  .contact { font-family: Calibri, sans-serif; font-size: 9pt; color: #222; margin-bottom: 1pt; }
+  .contact.links { color: #1f4e79; }
+  .divider { border: none; border-top: 1px solid #111; margin: 4pt 0 6pt; }
+  h2 { font-family: Calibri, sans-serif; font-size: 10pt; font-weight: bold; color: #111; text-transform: uppercase;
+       border-bottom: 0.75pt solid #bbb; padding-bottom: 1.5pt; margin-bottom: 3pt; }
+  section { margin-bottom: 6pt; }
+  .entry { margin-bottom: 3pt; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; }
+  .title { font-weight: bold; font-size: 10.2pt; color: #111; }
+  .date { font-family: Calibri, sans-serif; font-style: italic; font-size: 9pt; color: #444; white-space: nowrap; padding-left: 10pt; }
+  .company { font-style: italic; color: #333; }
+  .role { padding-left: 9pt; margin-top: 2pt; }
+  .role-title { font-weight: bold; font-size: 9.9pt; color: #111; }
+  ul { margin-left: 13pt; }
+  .role ul { margin-left: 13pt; }
+  li { margin-bottom: 0.5pt; }
+  .earlier h3 { font-size: 10.2pt; font-weight: bold; color: #111; margin-top: 3pt; }
+  .earlier li b { color: #222; }
+  .skills { font-family: Calibri, sans-serif; }
+  .skill-row { display: flex; }
+  .skill-row b { color: #111; width: 96pt; flex: none; }
+  .edu .company { font-size: 10.2pt; }
+</style>
+</head>
+<body>
+<header>
+  <h1>JOYMIE LACABA</h1>
+  <div class="role-line">Product &middot; AI &middot; Mobile Games</div>
+  <div class="contact">Singapore &nbsp;|&nbsp; LTVP holder, eligible to work via Letter of Consent</div>
+  <div class="contact links">
+    <a href="mailto:joylacaba52@gmail.com">joylacaba52@gmail.com</a> &nbsp;|&nbsp;
+    <a href="https://www.linkedin.com/in/joymie-l-4a765024b">linkedin.com/in/joymie-l-4a765024b</a> &nbsp;|&nbsp;
+    <a href="https://github.com/Joy52-cyber">github.com/Joy52-cyber</a> &nbsp;|&nbsp;
+    <a href="https://www.slashcal.com">slashcal.com</a>
+  </div>
+</header>
+<hr class="divider">
+
+<section>
+  <h2>Summary</h2>
+  <p>I build products end to end with vibe coding. I take an idea, plan it, build it, test it and launch it on my own. That's how I made Verdict, a QA tool that tests games by itself, and SlashCal, an AI scheduling assistant. At Eyeball Games I also built the computer vision for a pool coaching app on Ray-Ban Meta glasses, took Pool Masters to a worldwide launch, and wrote the controller spec for a Netflix game. I got there through QA, where I learned how products break, and customer support for Ring, where I learned what frustrates users. Now I want to bring all of that into a product role.</p>
+</section>
+
+<section>
+  <h2>Products I Built</h2>
+  <div class="entry">
+    <div class="head"><span class="title">Verdict, an automated QA tool for mobile games</span><span class="date">Jun 2026 &ndash; Aug 2026</span></div>
+    <p>Testing every build by hand was slow, and with the team in different timezones, developers had to wait for me before pushing. Vibe coded a tool they can run themselves anytime.</p>
+    <ul>
+      <li>It plays the game on a real Android phone by itself and tells you if the build is good, broken or couldn't be tested, with screenshots as proof</li>
+      <li>Demoed it to one of our developers, who said it would be really helpful for the team</li>
+      <li>Used it to test Pool Blast levels that were too hard to win, and suggested changes to ball positions, number of balls and obstacles</li>
+      <li>Ran it on 8 live games from the Play Store to prove it works on real released apps</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><span class="title">SlashCal, an AI scheduling assistant</span><span class="date">2025 &ndash; Present &middot; <a href="https://www.slashcal.com">slashcal.com</a></span></div>
+    <p>Setting up a meeting usually takes a lot of back-and-forth emails. With SlashCal you just CC it on the email. It checks everyone's Google or Outlook calendar, finds a time that works and sends the invite.</p>
+    <ul>
+      <li>Came up with the idea, planned the first version, then vibe coded, tested and launched it on my own</li>
+      <li>Built an AI assistant that reads the replies in the thread and works out what each person is asking for</li>
+      <li>Chose email on purpose, so people don't have to learn a new app</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="entry">
+    <div class="head"><span class="title">Eyeball Games Private Limited</span><span class="date">Aug 2024 &ndash; Sep 2026</span></div>
+    <div class="company">Singapore (Remote) &middot; Contractor, project-based engagements</div>
+    <div class="role">
+      <div class="head"><span class="role-title">AI Engineer</span><span class="date">Sep 2026</span></div>
+      <ul>
+        <li>Vibe coded the computer vision for IRL Pool Coach on Ray-Ban Meta glasses. It finds every ball on the table through the glasses' camera and suggests the next shot</li>
+        <li>Trained my own ball detection model (YOLO11). On test videos it found about 90% of the balls with no false detections</li>
+        <li>Set a rule before training: a new model only goes live if it does better. One version didn't, so I kept the old one</li>
+      </ul>
+    </div>
+    <div class="role">
+      <div class="head"><span class="role-title">Project Coordinator</span><span class="date">Feb 2025 &ndash; May 2026</span></div>
+      <ul>
+        <li>Wrote the spec for the phone controller in a Netflix game, defining how players use their phone to play</li>
+        <li>Played it myself as a player, found what felt wrong and got the changes into the final game</li>
+        <li>Ran the daily standups, kept the Notion board up to date and kept stakeholders updated until launch</li>
+      </ul>
+    </div>
+    <div class="role">
+      <div class="head"><span class="role-title">Quality Assurance</span><span class="date">Aug 2024 &ndash; Dec 2025</span></div>
+      <ul>
+        <li>Owned QA for Pool Masters from soft launch to worldwide release on Android and iOS</li>
+        <li>Found and tracked 100+ bugs on 10 devices and helped decide which ones had to be fixed before launch</li>
+        <li>Answered about 5 player reports a day and turned them into bugs that got fixed in the live game</li>
+      </ul>
+    </div>
+  </div>
+  <div class="earlier">
+    <h3>Earlier jobs</h3>
+    <ul>
+      <li><b>IT Assistant</b>, East West BPO, Philippines &middot; <i>Dec 2023 &ndash; May 2024</i>: fixed hardware and network issues</li>
+      <li><b>QA Intern</b>, Twist Resources, Philippines &middot; <i>Sep 2022 &ndash; Nov 2022</i>: wrote and ran test cases and reported bugs</li>
+      <li><b>Customer Service Associate</b>, Concentrix (Ring / Amazon), Philippines &middot; <i>Sep 2021 &ndash; Mar 2022</i>: helped Ring customers fix their devices</li>
+    </ul>
+  </div>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skill-row"><b>Product</b><span>Turning ideas into a first version, writing specs, prioritizing, release planning, user feedback</span></div>
+  <div class="skill-row"><b>Vibe coding &amp; AI</b><span>Claude, Cursor, Copilot, LLM APIs, AI agents, computer vision (YOLO, ONNX)</span></div>
+  <div class="skill-row"><b>QA</b><span>Test planning, regression testing, bug triage, Android and iOS testing</span></div>
+  <div class="skill-row"><b>Tech I've worked with</b><span>Python, JavaScript, SQL / PostgreSQL, React, Node.js, REST APIs, GitHub Actions, Notion</span></div>
+</section>
+
+<section class="edu">
+  <h2>Education</h2>
+  <div class="head"><span><span class="title">BS Information Technology</span> <span class="company">&middot; STI College</span></span><span class="date">Graduated June 2021</span></div>
+</section>
+</body>
+</html>

@@ -2,418 +2,234 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joymie Lacaba | Project Coordinator & QA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joymie Lacaba Portfolio</title>
+    <meta name="description" content="Joymie Lacaba builds and tests software products end to end: Verdict, SlashCal, IRL Pool Coach and more.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">JL</a>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-name">Joymie Lacaba</h1>
-            <h2 class="hero-title">Project Coordinator &amp; QA &middot; AI Builder</h2>
-            <p class="hero-description">
-                I coordinate cross-functional delivery on software teams and build AI-powered products. Shipped <a href="https://www.slashcal.com" target="_blank" style="color: var(--primary-light); text-decoration: none; border-bottom: 1px solid var(--primary-light);">SlashCal</a> (an AI scheduling platform with autonomous outreach). Led QA and sprint coordination at Eyeball Games through May 2026.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                <a href="resume.html" target="_blank" class="btn btn-secondary" style="border-color: var(--primary); color: var(--primary-light);">Resume</a>
-                <a href="qa-case-study.html" target="_blank" class="btn btn-secondary" style="border-color: var(--primary); color: var(--primary-light);">QA Case Study</a>
-                <a href="Joymie_Lacaba.pdf" download class="btn btn-secondary" style="border-color: var(--primary); color: var(--primary-light);">Download CV</a>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="code-block">
-                <div class="code-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                </div>
-                <pre><code><span class="keyword">const</span> joy = {
-  name: <span class="string">"Joymie Lacaba"</span>,
-  role: <span class="string">"Project Coordinator &amp; QA"</span>,
-  builds: [<span class="string">"SlashCal"</span>],
-  focus: <span class="string">"Shipping products end to end"</span>
-};</code></pre>
-            </div>
+    <header class="top">
+        <div class="wrap">
+            <a class="brand" href="#">Joymie Lacaba</a>
+            <nav aria-label="Main">
+                <a href="#projects">Projects</a>
+                <a href="#studio">Studio work</a>
+                <a href="#builds">Other builds</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </header>
 
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a <strong>BSIT graduate</strong> with experience across <strong>customer support, QA, IT helpdesk, and project coordination</strong>.
-                        I led QA and sprint coordination on live mobile titles through May 2026, and I build AI-powered products on the side.
-                    </p>
-                    <p>
-                        Most recently I worked as a <strong>Project Coordinator and QA contractor</strong> at Eyeball Games (Singapore) through May 2026,
-                        where I led daily sprint tracking, owned QA on a live Play Store title (Pool Masters), and coordinated release readiness across engineering, design, and stakeholders.
-                    </p>
-                    <p>
-                        On the side, I build and ship my own products. <strong><a href="https://www.slashcal.com" target="_blank" style="color: var(--primary-light); text-decoration: none;">SlashCal</a></strong> is an AI scheduling platform with Stripe billing, calendar sync, and an autonomous outreach agent (TruCal). Built solo using AI pair-programming with Claude and Cursor.
-                    </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number">2+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">1</span>
-                        <span class="stat-label">Product Built</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Technologies</span>
-                    </div>
-                </div>
+    <main>
+        <div class="wrap intro">
+            <p class="role">Product &middot; AI &middot; Mobile Games &middot; Singapore</p>
+            <h1>I build products end to end with vibe coding.</h1>
+            <p class="lede">I take an idea, plan it, build it, test it and launch it on my own. Background in QA and customer support. Looking for a product role.</p>
+            <div class="actions">
+                <a class="btn main" href="#projects">See the projects</a>
+                <a class="btn" href="Joymie_Lacaba_Resume.pdf">Resume</a>
+                <a class="btn" href="qa-case-study.html">QA case study</a>
+            </div>
+            <div class="tally">
+                <div><b>Verdict</b><span>Tests mobile games by itself</span></div>
+                <div><b>SlashCal</b><span>AI scheduling you CC on an email</span></div>
+                <div><b>IRL Pool Coach</b><span>Computer vision on Ray-Ban Meta glasses</span></div>
+                <div><b>Pool Masters</b><span>100+ bugs tracked through worldwide launch</span></div>
             </div>
         </div>
-    </section>
 
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">Authentication</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Database</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>AI &amp; Integration</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Claude API</span>
-                        <span class="skill-tag">OpenAI</span>
-                        <span class="skill-tag">Google Gemini</span>
-                        <span class="skill-tag">Playwright</span>
-                        <span class="skill-tag">Stripe</span>
-                        <span class="skill-tag">Gmail SMTP/IMAP</span>
-                        <span class="skill-tag">Slack Webhooks</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps &amp; Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Railway</span>
-                        <span class="skill-tag">Vercel</span>
-                        <span class="skill-tag">Netlify</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Testing &amp; QA</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Manual Testing</span>
-                        <span class="skill-tag">Functional Testing</span>
-                        <span class="skill-tag">Regression Testing</span>
-                        <span class="skill-tag">Playtest Facilitation</span>
-                        <span class="skill-tag">Bug Triage</span>
-                        <span class="skill-tag">Notion</span>
-                        <span class="skill-tag">JIRA</span>
-                        <span class="skill-tag">TestRail</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">Selenium (basic)</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Project Management</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Sprint Coordination</span>
-                        <span class="skill-tag">Standups</span>
-                        <span class="skill-tag">Stakeholder Alignment</span>
-                        <span class="skill-tag">Risk Registers</span>
-                        <span class="skill-tag">Release Readiness</span>
-                        <span class="skill-tag">Cross-Functional Coordination</span>
-                    </div>
-                </div>
+        <section id="projects" class="wrap">
+            <div class="head">
+                <h2>Main projects</h2>
+                <p>Status, what it does and what I did.</p>
             </div>
-        </div>
-    </section>
 
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <div class="project-preview schedulesync">
-                            <div class="app-mockup">
-                                <div class="mockup-header">Verdict</div>
-                                <div class="mockup-content">
-                                    <div class="chat-bubble user">run com.block.juggle &middot; cold</div>
-                                    <div class="chat-bubble ai">34,048 lines &middot; 49 findings &middot; bound to pid</div>
-                                    <div class="chat-bubble ai">ClassNotFoundException &times;12 - absent from all 16 dex</div>
-                                </div>
-                            </div>
-                        </div>
+            <article class="record">
+                <div>
+                    <div class="meta"><span class="pill lock">PRIVATE REPO</span><span>Jun &ndash; Aug 2026</span></div>
+                    <h3>Verdict</h3>
+                    <p>Automated QA tool for mobile games. It plays a game on a real Android phone and reports if the build is good, broken or couldn't be tested.</p>
+                    <ul>
+                        <li>Screenshots as proof of each result</li>
+                        <li>Tested Pool Blast levels and suggested difficulty changes</li>
+                        <li>Ran on 8 live Play Store games</li>
+                    </ul>
+                    <p class="stack">Python &middot; adb &middot; logcat &middot; Android</p>
+                    <div class="links"><a href="qa-case-study.html">Read the case study, mistakes included</a></div>
+                </div>
+                <div class="shots">
+                    <figure>
+                        <img src="img/verdict-dead.jpg" width="1280" height="551" loading="lazy" alt="Verdict result for a dead build, listing each check as passed, failed or unproven and marking where the chain broke.">
+                        <figcaption>A dead build result, replayed from a captured log, with the check where the chain broke marked.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/verdict-landing.jpg" width="1280" height="551" loading="lazy" alt="Verdict landing page headed: Point it at a build. Get one verdict, and the proof.">
+                        <figcaption>Verdict's landing page.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="record">
+                <div>
+                    <div class="meta"><span class="pill ok">DEMO LIVE</span><span>2025 &ndash; present</span></div>
+                    <h3>SlashCal</h3>
+                    <p>AI scheduling app. CC it on an email and it finds a time and sends the invite. Works with Google and Outlook calendars.</p>
+                    <ul>
+                        <li><b>Today:</b> daily meetings and no-show alerts</li>
+                        <li><b>Email scheduling:</b> threads in progress, booked or unanswered</li>
+                        <li><b>Meetings:</b> meeting types with booking links</li>
+                        <li><b>Bookings:</b> list and calendar views</li>
+                        <li><b>People:</b> contacts and meeting history</li>
+                        <li><b>AI Assistant:</b> manage your calendar in plain English</li>
+                        <li><b>Templates:</b> editable guest emails</li>
+                        <li><b>Analytics:</b> scheduling patterns and conversions</li>
+                        <li><b>Paid plans:</b> Smart Rules, Autonomous Mode and Teams</li>
+                    </ul>
+                    <p class="stack">React &middot; Node.js &middot; PostgreSQL &middot; Claude and Gemini APIs &middot; Stripe &middot; Railway</p>
+                    <div class="links">
+                        <a href="https://slashcal-showcase-production.up.railway.app">See the interactive walkthrough</a>
                     </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Android</span>
-                            <span>adb</span>
-                            <span>logcat</span>
-                            <span>QA Automation</span>
-                        </div>
-                        <h3>Verdict</h3>
-                        <p>
-                            A QA instrument for mobile builds you did not write. It drives a shipped Android app on real hardware, streams the device log for the whole session, and files each run as a structured record with the app's own output attached - no SDK, no instrumentation, no access to source. See the <a href="qa-case-study.html" style="color: var(--primary-light);">case study</a> for what it found and what it got wrong.
-                        </p>
-                        <ul class="project-features">
-                            <li>Found a live defect in a shipped third-party title: a class referenced at runtime and absent from all 16 dex files in the installed APK, corroborated on two independent channels</li>
-                            <li>Binds every finding to the application's process ID, so another app's log lines cannot be reported as yours</li>
-                            <li>Guarantees a bindable process start before each run, then streams the log rather than dumping it - a dump loses the first seconds, which is where launch evidence lives</li>
-                            <li>Refuses rather than guesses: a reading that cannot be attributed is reported as unattributable, not as a clean result</li>
-                            <li>Five game drivers, screen-graph mapping, and replayable flows generated from what was walked</li>
-                            <li>Stack: Python (standard library only), adb, PyInstaller desktop build</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="qa-case-study.html" target="_blank" class="btn btn-small">Read the Case Study</a>
-                            <span class="btn btn-small btn-outline" style="cursor: default; opacity: 0.7;">Private Repository</span>
-                        </div>
-                    </div>
+                </div>
+                <div class="shots">
+                    <figure>
+                        <img src="img/slashcal-thread.jpg" width="1400" height="875" loading="lazy" alt="SlashCal email scheduling screen showing what the assistant did on a thread and that it is waiting for the guest.">
+                        <figcaption>What SlashCal did on an email thread. Demo account with sample names.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/slashcal-today.jpg" width="1400" height="875" loading="lazy" alt="SlashCal Today dashboard with upcoming meetings and a Copilot panel flagging one no-show risk.">
+                        <figcaption>The Today dashboard. Demo account with sample names.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="record">
+                <div>
+                    <div class="meta"><span class="pill lock">CLIENT WORK</span><span>Sep 2026 &middot; Eyeball Games</span></div>
+                    <h3>IRL Pool Coach</h3>
+                    <p>Pool coach for Ray-Ban Meta glasses. It finds every ball through the camera and suggests the next shot. I built the computer vision.</p>
+                    <ul>
+                        <li>Trained my own YOLO11 ball detection model</li>
+                        <li>Found about 90% of balls on test videos, with no false detections</li>
+                    </ul>
+                    <p class="stack">YOLO11 &middot; ONNX &middot; Ray-Ban Meta glasses</p>
+                </div>
+                <div class="shots">
+                    <figure>
+                        <svg viewBox="0 0 560 300" role="img" aria-label="Illustration of a pool table with a suggested shot line from the cue ball to a ball and on to a corner pocket.">
+                            <rect width="560" height="300" fill="#0e4d44"/>
+                            <rect x="16" y="16" width="528" height="268" fill="none" stroke="#7fb5a8" stroke-width="2"/>
+                            <g fill="#071f1b">
+                                <circle cx="24" cy="24" r="14"/><circle cx="536" cy="24" r="14"/><circle cx="24" cy="276" r="14"/><circle cx="536" cy="276" r="14"/><circle cx="280" cy="20" r="12"/><circle cx="280" cy="280" r="12"/>
+                            </g>
+                            <path d="M150 210 L396 92" stroke="#ffffff" stroke-width="2" stroke-dasharray="7 6"/>
+                            <path d="M410 85 L530 30" stroke="#f5c542" stroke-width="2" stroke-dasharray="7 6"/>
+                            <circle cx="150" cy="210" r="12" fill="#ffffff"/>
+                            <circle cx="410" cy="85" r="12" fill="#f5c542"/>
+                            <circle cx="300" cy="215" r="12" fill="#d0342c"/>
+                            <circle cx="225" cy="95" r="12" fill="#2a5fd0"/>
+                            <circle cx="450" cy="200" r="12" fill="#1c1c1c"/>
+                        </svg>
+                        <figcaption>Illustration of a suggested shot. Not app footage.</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+        <section id="studio" class="wrap">
+            <div class="head">
+                <h2>Studio work</h2>
+                <p>Games at Eyeball Games, Singapore.</p>
+            </div>
+            <div class="grid">
+                <article class="small">
+                    <div class="meta"><span class="pill ok">LIVE ON GOOGLE PLAY</span></div>
+                    <h3>Pool Masters</h3>
+                    <p>Owned QA from soft launch to worldwide release on Android and iOS. Tracked 100+ bugs on 10 devices.</p>
+                    <p class="stack">QA &middot; Android and iOS &middot; Player support</p>
                 </article>
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <div class="project-preview schedulesync">
-                            <div class="app-mockup">
-                                <div class="mockup-header">SlashCal</div>
-                                <div class="mockup-content">
-                                    <div class="chat-bubble ai">How can I help you schedule?</div>
-                                    <div class="chat-bubble user">Book a meeting tomorrow at 2pm</div>
-                                    <div class="chat-bubble ai">Done! Meeting scheduled.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>PostgreSQL</span>
-                            <span>Claude AI</span>
-                            <span>Gemini</span>
-                            <span>Stripe</span>
-                        </div>
-                        <h3>SlashCal</h3>
-                        <p>
-                            An AI scheduling platform with an autonomous outreach agent (TruCal). Built solo using AI pair-programming with Claude and Cursor. Live at <a href="https://www.slashcal.com" target="_blank" style="color: var(--primary-light);">slashcal.com</a>.
-                        </p>
-                        <ul class="project-features">
-                            <li>AI scheduling assistant for booking meetings via natural language</li>
-                            <li>Public booking pages with Google Calendar sync</li>
-                            <li>Email bot - CC SlashCal in any email thread to schedule</li>
-                            <li>Stripe subscription billing</li>
-                            <li>Autonomous outreach agent: prospect scraping, sequenced emails, reply classification across 9 intent types, automatic stop rules</li>
-                            <li>Stack: React + Vite, Node.js / Express, PostgreSQL, Gemini + Claude APIs, Playwright, Railway</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://www.slashcal.com" target="_blank" class="btn btn-small">Live Site</a>
-                            <a href="https://www.slashcal.com/joy" target="_blank" class="btn btn-small btn-outline">Try Booking Demo</a>
-                            <span class="btn btn-small btn-outline" style="cursor: default; opacity: 0.7;">Private Repository</span>
-                        </div>
-                    </div>
+                <article class="small">
+                    <div class="meta"><span class="pill lock">UNDER NDA</span></div>
+                    <h3>A Netflix game</h3>
+                    <p>Wrote the phone controller spec and ran the team's standups through launch. Title under NDA.</p>
+                    <p class="stack">Product spec &middot; Coordination</p>
                 </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience" class="section experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">February 2025 - May 2026</div>
-                        <h3>Project Coordinator &amp; Quality Assurance (Contractor)</h3>
-                        <h4>Eyeball Games Private Limited (Singapore, Remote)</h4>
-                        <ul>
-                            <li>Led daily tracking calls with a 5-person team (4 engineers + self)</li>
-                            <li>Defined project scope, created schedules, and tracked milestones; maintained meeting minutes, action items, and risk registers</li>
-                            <li>Sole QA on Pool Masters (live on Google Play Store) - owned the full bug lifecycle in Notion</li>
-                            <li>Engaged with players on reported in-game bug issues alongside a teammate; triaged, verified reproduction, and coordinated fixes</li>
-                            <li>Led QA on a new in-game control scheme; defined feel, function, and edge-case behavior</li>
-                            <li>Organized and facilitated playtest sessions; synthesized feedback into structured iteration notes</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">August 2024 - January 2025</div>
-                        <h3>Quality Assurance Associate &amp; Community Support (Contractor)</h3>
-                        <h4>Eyeball Games Private Limited (Singapore, Remote)</h4>
-                        <ul>
-                            <li>Joined as sole QA on Pool Masters; owned manual testing and bug reporting in Notion</li>
-                            <li>Handled player-facing community support; triaged bug reports into actionable tickets</li>
-                            <li>Scope expanded mid-contract to include Notion management and daily standup facilitation</li>
-                            <li>Work led directly into the Project Coordinator role per signed contract addendum</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">December 2023 - May 2024</div>
-                        <h3>IT Assistant</h3>
-                        <h4>East West BPO &middot; Angeles, PH (On-site)</h4>
-                        <ul>
-                            <li>Provided IT support to BPO employees: account setup, hardware troubleshooting, software installations, access management</li>
-                            <li>Supported onboarding and offboarding of agents across multiple account teams</li>
-                            <li>Maintained internal IT documentation and workstations to keep operations running for the call center floor</li>
-                            <li>Got hands-on with how a high-volume, US-hours operation runs day to day</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">December 2022 - November 2023</div>
-                        <h3>Career Break - Operations &amp; Self-Directed Learning</h3>
-                        <h4>Stepped out of tech briefly</h4>
-                        <ul>
-                            <li>Helped run a small wellness business: handled bookings, supervised staff, managed payments and inventory</li>
-                            <li>Used the time to invest in self-directed learning before returning to tech</li>
-                            <li>Returned to the tech industry through the IT Assistant role at East West BPO</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">September - November 2022</div>
-                        <h3>QA Intern</h3>
-                        <h4>Twist Resources &middot; 3-month internship (Remote)</h4>
-                        <ul>
-                            <li>Performed manual functional and regression testing on web and mobile applications for client projects</li>
-                            <li>Wrote and updated test cases; logged bugs in JIRA and TestRail with reproduction steps and severity</li>
-                            <li>Collaborated with the lead QA on bug triage and release cycles</li>
-                            <li>Picked up basic test automation using Selenium (web) and Postman (API testing)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">September 2021 - March 2022</div>
-                        <h3>Customer Service Associate</h3>
-                        <h4>Concentrix &middot; Angeles, PH (On-site) &middot; Account: Ring (Amazon)</h4>
-                        <ul>
-                            <li>Provided customer support for Ring smart home security products to US-based customers via phone, chat, and email</li>
-                            <li>Troubleshot device and account issues; escalated complex hardware and software cases to the right specialists</li>
-                            <li>Maintained detailed case notes and met SLA targets in a high-volume, US-business-hours environment</li>
-                            <li>Built foundations in customer empathy, escalation handling, and cross-team coordination</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Graduated June 2021</div>
-                        <h3>Bachelor of Science in Information Technology</h3>
-                        <h4>STI College</h4>
-                        <ul>
-                            <li>Studied programming, databases, and networking</li>
-                            <li>Built multiple projects across different tech stacks</li>
-                            <li>Learned the fundamentals of software development</li>
-                        </ul>
-                    </div>
-                </div>
+        <section id="builds" class="wrap">
+            <div class="head">
+                <h2>Other builds</h2>
+                <p>Smaller products. Private repos, no public demo.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-intro">
-                    I'm open to new opportunities - whether it's a full-time role, contract work, or collaboration.
-                    If you're building something interesting, I'd love to hear about it.
-                </p>
-                <div class="contact-methods">
-                    <a href="mailto:joylacaba52@gmail.com" class="contact-card">
-                        <div class="contact-icon">@</div>
-                        <div class="contact-info">
-                            <h4>Email</h4>
-                            <p>joylacaba52@gmail.com</p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/Joy52-cyber" target="_blank" class="contact-card">
-                        <div class="contact-icon">GH</div>
-                        <div class="contact-info">
-                            <h4>GitHub</h4>
-                            <p>github.com/Joy52-cyber</p>
-                        </div>
-                    </a>
-                    <a href="https://linkedin.com/in/joymie-l-4a765024b" target="_blank" class="contact-card">
-                        <div class="contact-icon">in</div>
-                        <div class="contact-info">
-                            <h4>LinkedIn</h4>
-                            <p>Connect with me</p>
-                        </div>
-                    </a>
-                </div>
-                <a href="mailto:joylacaba52@gmail.com" class="btn btn-primary btn-large">Send Message</a>
+            <div class="grid">
+                <article class="small">
+                    <h3>StockFlow</h3>
+                    <p>Warehouse app. Photograph a delivery receipt and its items go into stock. Includes barcodes, suppliers, purchase orders and reorder alerts.</p>
+                    <p class="stack">React &middot; Node.js &middot; PostgreSQL &middot; Gemini</p>
+                </article>
+                <article class="small">
+                    <h3>AutoBooks</h3>
+                    <p>Bookkeeping app. Upload a document and it extracts the transaction. Includes review flags, QuickBooks and CSV import.</p>
+                    <p class="stack">React &middot; Node.js &middot; PostgreSQL &middot; Gemini &middot; Tesseract</p>
+                </article>
+                <article class="small">
+                    <h3>Loan Ledger</h3>
+                    <p>Loan tracker where balances are computed and never edited. Runs on desktop offline or synced with a phone.</p>
+                    <p class="stack">Node.js &middot; Electron &middot; PWA &middot; Railway</p>
+                </article>
+                <article class="small">
+                    <h3>CreditBox</h3>
+                    <p>Mobile tracker for loans, bills, savings and spending, with reminders.</p>
+                    <p class="stack">React &middot; Node.js &middot; PostgreSQL</p>
+                </article>
+                <article class="small">
+                    <h3>Habit Control</h3>
+                    <p>30-day habit tracker with streaks, goals, XP and badges.</p>
+                    <p class="stack">React &middot; Node.js &middot; PostgreSQL</p>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Joymie Lacaba. Built with passion.</p>
-        </div>
-    </footer>
+        <section id="experience" class="wrap">
+            <div class="head"><h2>Experience</h2></div>
+            <div class="jobs">
+                <div class="job"><time>Sep 2026</time><div><h3>AI Engineer, Eyeball Games</h3><p>Vibe coded the computer vision for IRL Pool Coach on Ray-Ban Meta glasses, including my own YOLO11 ball detection model.</p></div></div>
+                <div class="job"><time>Feb 2025 &ndash; May 2026</time><div><h3>Project Coordinator, Eyeball Games</h3><p>Wrote the phone controller spec for a Netflix game. Ran the daily standups and Notion board and kept stakeholders updated until launch.</p></div></div>
+                <div class="job"><time>Aug 2024 &ndash; Dec 2025</time><div><h3>Quality Assurance, Eyeball Games</h3><p>Owned QA for Pool Masters from soft launch to worldwide release on Android and iOS.</p></div></div>
+                <div class="job"><time>Dec 2023 &ndash; May 2024</time><div><h3>IT Assistant, East West BPO</h3><p>Fixed hardware and network issues.</p></div></div>
+                <div class="job"><time>Sep &ndash; Nov 2022</time><div><h3>QA Intern, Twist Resources</h3><p>Wrote and ran test cases and reported bugs.</p></div></div>
+                <div class="job"><time>Sep 2021 &ndash; Mar 2022</time><div><h3>Customer Service Associate, Concentrix</h3><p>Helped Ring (Amazon) customers fix their devices.</p></div></div>
+                <div class="job"><time>Graduated Jun 2021</time><div><h3>BS Information Technology, STI College</h3></div></div>
+            </div>
+        </section>
 
-    <script src="script.js"></script>
+        <section id="skills" class="wrap">
+            <div class="head"><h2>Skills</h2></div>
+            <div class="jobs">
+                <div class="job"><h3>Product</h3><p>Turning ideas into a first version, writing specs, prioritizing, release planning, user feedback</p></div>
+                <div class="job"><h3>Vibe coding &amp; AI</h3><p>Claude, Cursor, Copilot, LLM APIs, AI agents, computer vision (YOLO, ONNX)</p></div>
+                <div class="job"><h3>QA</h3><p>Test planning, regression testing, bug triage, Android and iOS testing</p></div>
+                <div class="job"><h3>Tech</h3><p>Python, JavaScript, SQL / PostgreSQL, React, Node.js, REST APIs, GitHub Actions, Notion</p></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact wrap">
+            <div class="head">
+                <h2>Get in touch</h2>
+                <p>Open to product roles, contract work and collaboration. joylacaba52@gmail.com</p>
+            </div>
+            <div class="actions">
+                <a class="btn main" href="mailto:joylacaba52@gmail.com">Email me</a>
+                <a class="btn" href="https://www.linkedin.com/in/joymie-l-4a765024b">LinkedIn</a>
+                <a class="btn" href="https://github.com/Joy52-cyber">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrap">&copy; 2026 Joymie Lacaba</footer>
 </body>
 </html>
