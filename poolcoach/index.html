@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IRL Pool Coach: how it works</title>
+<style>
+  :root { --bg:#f6f5f1; --card:#fff; --ink:#1d1d1b; --muted:#6b6a64; --line:#e3e1da; --accent:#d9822b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161614; --card:#20201d; --ink:#eeede8; --muted:#a3a29b; --line:#34332f; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.45 system-ui,-apple-system,Segoe UI,sans-serif; background:var(--bg); color:var(--ink); }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 20px; }
+  header { padding:32px 0 8px; }
+  h1 { margin:0 0 4px; font-size:26px; }
+  header p, .note { margin:0; color:var(--muted); }
+  .grid { padding:20px 0; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+  .thumb { aspect-ratio:4/3; background:#000; position:relative; overflow:hidden; }
+  .thumb img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
+  .thumb.fit img { object-fit:contain; }
+  .num { position:absolute; top:10px; left:10px; background:#fff; color:#1d1d1b; font-weight:700; width:26px; height:26px; border-radius:50%; display:grid; place-items:center; font-size:13px; box-shadow:0 1px 4px #0006; }
+  .body { padding:12px 14px 14px; }
+  .body h2 { margin:0 0 4px; font-size:16px; }
+  .body p { margin:0; color:var(--muted); font-size:14px; }
+  h3 { margin:12px 0 10px; font-size:18px; }
+  .steps { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:10px; }
+  .step { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 12px; font-size:14px; }
+  .arrow { color:var(--muted); }
+  a { color:var(--accent); }
+  .back { display:inline-block; margin-top:16px; font-size:14px; }
+  footer { padding:8px 0 36px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="../">&larr; Back to portfolio</a>
+<header>
+  <h1>IRL Pool Coach: how it works</h1>
+  <p>An AI pool coach I built at Eyeball Games. It reads the table from a photo or the glasses camera and tells you the best shot. Real screens from the app, using a sample table photo.</p>
+</header>
+
+<main class="grid">
+  <article class="card">
+    <div class="thumb"><span class="num">1</span><img src="1-start.jpg" alt="Start screen with Analyze a photo button and sample tables"></div>
+    <div class="body"><h2>Start</h2><p>Tap “Analyze a photo” or pick a sample table.</p></div>
+  </article>
+  <article class="card">
+    <div class="thumb"><span class="num">2</span><img src="2-analysing.jpg" alt="Analysing photo screen with group balls and Solids picker"></div>
+    <div class="body"><h2>Analysing</h2><p>Phone reads the photo. Top bar: your group (Solids / Stripes).</p></div>
+  </article>
+  <article class="card">
+    <div class="thumb"><span class="num">3</span><img src="3-pick.jpg" alt="Coach's pick card: 6-ball, top-right corner"></div>
+    <div class="body"><h2>Coach’s pick</h2><p>Ball, pocket, aim, spin, power. Plus the next shot.</p></div>
+  </article>
+  <article class="card">
+    <div class="thumb"><span class="num">4</span><img src="4-balls.jpg" alt="Shot choices above the photo with balls circled"></div>
+    <div class="body"><h2>Other options</h2><p>★ = best. Tap another ball. Your balls are circled on the photo.</p></div>
+  </article>
+  <article class="card">
+    <div class="thumb fit"><span class="num">5</span><img src="5-map.jpg" alt="Top-down table map, 16 balls detected"></div>
+    <div class="body"><h2>Table map</h2><p>Top-down view of every ball found.</p></div>
+  </article>
+  <article class="card">
+    <div class="thumb fit"><span class="num">6</span><img src="6-mic.jpg" alt="Microphone button turned on"></div>
+    <div class="body"><h2>Mic</h2><p>Tap to talk to the coach. Off by default.</p></div>
+  </article>
+</main>
+
+<h3>On the Ray-Ban Meta glasses</h3>
+<div class="steps">
+  <span class="step">Say &ldquo;Coach me&rdquo;</span><span class="arrow">&rarr;</span>
+  <span class="step">Camera reads the table</span><span class="arrow">&rarr;</span>
+  <span class="step">Balls stop: it says the best shot</span><span class="arrow">&rarr;</span>
+  <span class="step">Repeats every shot</span><span class="arrow">&rarr;</span>
+  <span class="step">&ldquo;Game over&rdquo; turns the camera off</span>
+</div>
+<p class="note">Everything runs on the phone. No photos or audio leave it.</p>
+<footer>Prototype. Screens from the phone app; the glasses mode is tested in a browser, not yet on real glasses.</footer>
+</div>
+</body>
+</html>
